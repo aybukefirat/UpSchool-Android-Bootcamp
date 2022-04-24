@@ -5,6 +5,7 @@
 - [Araştırma Projesi 1 - Lateinit](#1)
 - [Araştırma Projesi 2 - Tools Namespace](#2)
 - [Araştırma Projesi 3 - Font family XML](#3)
+- [Araştırma Projesi 4 - Property Animation](#4)
  
  
 ### <a name="1"></a> Araştırma Projesi 1
@@ -42,8 +43,8 @@ Here I have an example,
 ![code](https://user-images.githubusercontent.com/66526972/163675117-e067a456-232e-4f93-a16a-8532a264b094.png)
 
 ### <a name="3"></a> Araştırma Projesi 3
-- Font family dosyası nasıl oluşturulup kullanıyoruz? 
-- Niçin böyle kullanımı tercih ediyoruz ?
+- Font family dosyasını nasıl oluşturup kullanıyoruz? 
+- Niçin böyle bir kullanımı tercih ediyoruz?
 
 Google Fonts provide a wide variety of fonts that can be used to style the text in Android Studio.There are majorly three methods to add custom fonts to text in Android StudioThe first two methods involve the use of the Typeface class but we’re going to talk about the third method which is quite direct and easy.
 
@@ -65,4 +66,22 @@ While the method seems easy and time-saving, however, it bundles the extra files
 
 3- Enclose each font file, style, and weight attribute in the <font> element. (developer.android.com)
 
+ 
+ 
+ ### <a name="4"></a> Araştırma Projesi 4
 
+ - ObjectAnimator ve Animator arasındaki fark nedir? Kısaca açıklayınız.
+ 
+ Basically, Animator is a superclass while ObjectAnimator is a subclass.
+ 
+ - Animator
+ 
+abstract class Animator : Cloneable
+ 
+This is the superclass for classes which provide basic support for animations which can be started, ended, and have AnimatorListeners added to them.
+
+- ObjectAnimator
+ 
+ class ObjectAnimator : ValueAnimator
+ 
+This subclass of ValueAnimator provides support for animating properties on target objects. The constructors of this class take parameters to define the target object that will be animated as well as the name of the property that will be animated.
